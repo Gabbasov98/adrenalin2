@@ -1,0 +1,26 @@
+.section-gallery {
+    background: #FFFFFF;
+    &__inner {
+        padding-top: 40px;
+    }
+    &__title {
+        font-family: Halvar Breitschrift;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #009DE0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-gallery {
+        &__inner {
+            padding-top: 20px;
+        }
+        &__title {
+            font-size: 20px !important;
+        }
+    }
+}

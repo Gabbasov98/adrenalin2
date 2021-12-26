@@ -1,0 +1,33 @@
+input::placeholder {
+  color: #808080; }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  border-radius: 80px; }
+
+.btn-blue {
+  background-color: #009DE0;
+  color: #FFFFFF; }
+  .btn-blue:hover {
+    background-color: #0079ad;
+    color: #FFFFFF; }
+  .btn-blue:active {
+    background-color: #00567a;
+    color: #FFFFFF; }
+
+.btn-white {
+  background: #FFFFFF;
+  color: #009DE0; }
+  .btn-white:hover {
+    background-color: #e6e6e6;
+    color: #009DE0; }
+  .btn-white:active {
+    background-color: #cccccc;
+    color: #009DE0; }
+
+/*# sourceMappingURL=ux.css.map */

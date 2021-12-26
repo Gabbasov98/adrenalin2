@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигация</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <section class='contacts'>
+        <div class='container'>
+            <div style="margin-bottom: 30px; font-size: 22px;">
+                <a target="_blank" href="index.html">Главная</a>
+            </div>
+            <div style="margin-bottom: 30px; font-size: 22px;">
+                <a target="_blank" href="article.html">Статья блога</a>
+            </div>
+            <div style="margin-bottom: 30px; font-size: 22px;">
+                <a target="_blank" href="blog.html">Блог</a>
+            </div>
+            <div style="margin-bottom: 30px; font-size: 22px;">
+                <a target="_blank" href="contacts.html">Контакты</a>
+            </div>
+            <div style="margin-bottom: 30px; font-size: 22px;">
+                <a target="_blank" href="gallery.html">Галлерея</a>
+            </div>
+
+            <div style="margin-bottom: 30px; font-size: 22px;">
+                <button style="width: 200px; height: 50px; border: 2px solid #000;" data-toggle="modal" data-target="#modal1">Modal 1</button>
+            </div>
+            <div style="margin-bottom: 30px; font-size: 22px;">
+                <button style="width: 200px; height: 50px; border: 2px solid #000;" data-toggle="modal" data-target="#modal2">Modal 2</button>
+            </div>
+        </div>
+    </section>
+
+    <div id='modal1' class='modal fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close close' data-dismiss='modal'>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9998 16.3258L21.836 23.1639L23.1635 21.8383L16.3254 15.0002L23.1635 8.16393L21.8379 6.83643L14.9998 13.6746L8.16352 6.83643L6.83789 8.16393L13.6741 15.0002L6.83789 21.8364L8.16352 23.1639L14.9998 16.3258Z" fill="white"/>
+                </svg>
+            </button>
+            <div class="modal__content">
+                <div class="modal__title">
+                    Оставить <span>заявку</span>
+                </div>
+                <div class="modal__desc">Оставтье свой номер телефона и мы свяжемся с Вами в течение часа</div>
+                <form class="modal__form">
+                    <div class="form-group modal__form-group">
+                        <input type="text" placeholder="Ваше имя">
+                        <img src="img/icon.svg" alt="">
+                    </div>
+                    <div class="form-group modal__form-group">
+                        <input type="text" placeholder="Номер телефона">
+                        <img src="img/icon2.svg" alt="">
+                    </div>
+                    <button class="modal__form-btn btn btn-blue">Записаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id='modal2' class='modal modal2 fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close close' data-dismiss='modal'>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9998 16.3258L21.836 23.1639L23.1635 21.8383L16.3254 15.0002L23.1635 8.16393L21.8379 6.83643L14.9998 13.6746L8.16352 6.83643L6.83789 8.16393L13.6741 15.0002L6.83789 21.8364L8.16352 23.1639L14.9998 16.3258Z" fill="white"/>
+                </svg>
+            </button>
+            <div class="modal__content">
+                <div class="modal__title">
+                    Спасибо!
+                </div>
+                <div class="modal__desc">Ожидайте звонка нашего эксперта <br> в течение дня</div>
+                <img src="img/logo2.svg" alt="" class="modal__logo">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

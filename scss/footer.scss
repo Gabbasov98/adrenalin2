@@ -1,0 +1,151 @@
+.footer {
+    background: #1A2434;
+    padding: 140px 0 125px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 200px;
+        display: block;
+        svg {
+            width: 100%;
+            height: auto;
+        }
+        .logo-letter {
+            fill: #fff;
+        }
+    }
+    &__privacy {
+        margin-top: 54px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #8692A6;
+        a {
+            color: #009DE0;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__item,
+    &__phone,
+    &__mail {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 350%;
+        color: #FFFFFF;
+        &:hover {
+            color: #009DE0;
+        }
+    }
+    &__mail {
+        color: #009DE0;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+        &-item {
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+    }
+    &__btn {
+        width: 242px;
+        height: 58px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        padding: 80px 0;
+        &__socials {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+            position: relative;
+            padding-bottom: 80px;
+        }
+        &__col {
+            &:nth-child(1) {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+        &__logo {
+            width: 106px;
+        }
+        &__privacy {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer {
+        &__inner {
+            padding-bottom: 230px;
+        }
+        &__col {
+            &:nth-child(2) {
+                width: 140px;
+                margin-right: 10px;
+            }
+            &:nth-child(3) {
+                width: calc(100% - 150px);
+            }
+        }
+        &__socials {
+            position: absolute;
+            width: 100%;
+            bottom: 180px;
+            left: 0;
+            justify-content: space-between;
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
+        &__btn {
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 85px;
+            font-size: 12px;
+        }
+        &__phone,
+        &__mail,
+        &__item {
+            font-size: 12px;
+        }
+        &__privacy {
+            font-size: 12px;
+        }
+    }
+}

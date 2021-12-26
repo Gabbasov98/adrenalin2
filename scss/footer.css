@@ -1,0 +1,99 @@
+.footer {
+  background: #1A2434;
+  padding: 140px 0 125px; }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between; }
+  .footer__logo {
+    width: 200px;
+    display: block; }
+    .footer__logo svg {
+      width: 100%;
+      height: auto; }
+    .footer__logo .logo-letter {
+      fill: #fff; }
+  .footer__privacy {
+    margin-top: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8692A6; }
+    .footer__privacy a {
+      color: #009DE0;
+      text-decoration: underline; }
+      .footer__privacy a:hover {
+        text-decoration: none; }
+  .footer__item, .footer__phone, .footer__mail {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 350%;
+    color: #FFFFFF; }
+    .footer__item:hover, .footer__phone:hover, .footer__mail:hover {
+      color: #009DE0; }
+  .footer__mail {
+    color: #009DE0;
+    text-decoration: underline; }
+    .footer__mail:hover {
+      text-decoration: none; }
+  .footer__socials {
+    display: flex;
+    align-items: center;
+    margin-top: 18px; }
+    .footer__socials-item:not(:last-child) {
+      margin-right: 35px; }
+  .footer__btn {
+    width: 242px;
+    height: 58px; }
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 80px 0; }
+    .footer__socials-item:not(:last-child) {
+      margin-right: 15px; } }
+@media screen and (max-width: 992px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 80px; }
+  .footer__col:nth-child(1) {
+    width: 100%;
+    margin-bottom: 40px; }
+  .footer__logo {
+    width: 106px; }
+  .footer__privacy {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center; } }
+@media screen and (max-width: 650px) {
+  .footer__inner {
+    padding-bottom: 230px; }
+  .footer__col:nth-child(2) {
+    width: 140px;
+    margin-right: 10px; }
+  .footer__col:nth-child(3) {
+    width: calc(100% - 150px); }
+  .footer__socials {
+    position: absolute;
+    width: 100%;
+    bottom: 180px;
+    left: 0;
+    justify-content: space-between; }
+    .footer__socials-item:not(:last-child) {
+      margin-right: 40px; }
+  .footer__btn {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 85px;
+    font-size: 12px; }
+  .footer__phone, .footer__mail, .footer__item {
+    font-size: 12px; }
+  .footer__privacy {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,137 @@
+.modal {
+    &-dialog {
+        margin-top: 70px;
+        width: 570px;
+        background: #212C3F;
+        border-radius: 30px;
+    }
+    &__close {
+        z-index: 1000;
+        position: absolute;
+        float: unset;
+        top: 30px;
+        right: 23px;
+        opacity: 1 !important;
+    }
+    &__content {
+        padding: 65px 80px;
+        text-align: center;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-family: 'Halvar Breitschrift', sans-serif;
+        span {
+            color: #009DE0;
+        }
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    &__form {
+        margin-top: 45px;
+        &-group {
+            position: relative;
+            img {
+                position: absolute;
+                right: 38px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+            input {
+                background: #1A2434;
+                border-radius: 30px;
+                width: 100%;
+                height: 58px;
+                font-size: 16px;
+                line-height: 200%;
+                color: #8692A6;
+                display: block;
+                margin-bottom: 30px;
+                padding-left: 41px;
+                padding-right: 65px;
+                border: none;
+            }
+        }
+        &-btn {
+            width: 100%;
+            height: 58px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    &__logo {
+        width: 200px;
+        display: block;
+        margin: 75px auto 0;
+    }
+}
+
+.modal-backdrop.in {
+    background: #000;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        &-dialog {
+            margin: 50px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modal {
+        &__close {
+            top: 13px;
+            right: 15px;
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &-dialog {
+            width: calc(100% - 18px);
+        }
+        &__content {
+            padding: 40px 25px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__desc {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        &__form {
+            margin-top: 30px;
+            &-group {
+                input {
+                    height: 40px;
+                    margin-bottom: 15px;
+                    padding-left: 20px;
+                    padding-right: 40px;
+                    font-size: 12px;
+                }
+                img {
+                    right: 19px;
+                }
+            }
+            &-btn {
+                height: 40px;
+                font-size: 12px;
+            }
+        }
+        &__logo {
+            width: 155px;
+            margin: 40px auto 0;
+        }
+    }
+}
