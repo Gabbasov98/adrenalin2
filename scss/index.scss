@@ -54,6 +54,7 @@
         line-height: 120%;
         text-transform: uppercase;
         color: #303B4E;
+        transition: all .3s;
         cursor: pointer;
         &-block {
             display: flex;
@@ -78,6 +79,8 @@
         color: #8692A6;
         padding: 6px 70px;
         cursor: pointer;
+        white-space: nowrap;
+        transition: all .3s;
         &--active {
             background: #212C3F !important;
             border-radius: 29px 29px 0px 0px !important;
@@ -98,8 +101,8 @@
         }
         &-block {
             display: flex;
-            justify-content: start;
             align-items: center;
+            overflow-x: auto;
         }
     }
     &__input-checkbox {
@@ -111,10 +114,11 @@
             margin-right: 30px;
             margin-left: 30px;
             cursor: pointer;
+            margin-bottom: 0;
             &::before {
                 content: '';
-                width: 54px;
-                height: 29px;
+                width: 100%;
+                height: 100%;
                 border-radius: 50px;
                 background: #009DE0;
                 position: absolute;
@@ -128,8 +132,10 @@
                 box-shadow: 0px 4px 10px rgba(26, 36, 52, 0.2);
                 border-radius: 50px;
                 position: absolute;
-                top: 2px;
+                top: 50%;
+                transform: translateY(-50%);
                 left: 2px;
+                transition: all .3s;
             }
         }
         input {
@@ -981,7 +987,7 @@
             margin-bottom: 32px;
         }
         &__title {
-            font-size: 20px;
+            font-size: 18px;
         }
         &__button {
             padding: 6px 20px;
@@ -1057,6 +1063,21 @@
             }
             p {
                 font-size: 12px;
+            }
+        }
+        &__input-checkbox {
+            label {
+                width: 24px;
+                height: 13px;
+                margin: 0 10px;
+                &::before {}
+                &::after {
+                    width: 11px;
+                    height: 11px;
+                }
+            }
+            & input:checked+label::after {
+                left: 12px;
             }
         }
     }
@@ -1350,9 +1371,6 @@
         &__input-checkbox {
             margin-top: 16px;
             margin-bottom: 16px;
-        }
-        &__button-block {
-            flex-wrap: wrap;
         }
     }
     .event {
